@@ -1,9 +1,7 @@
 #ifndef CHARACTER_H
 #define	CHARACTER_H
 
-#include <iostream>
-#include <iomanip>
-#include <string>
+#include "Inventory.h"
 
 class Character
 {

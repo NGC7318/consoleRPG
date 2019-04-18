@@ -44,10 +44,10 @@ void Character::initliaze(const std::string name)
 	this->name = name;
 	this->level = 1;
 	this->exp = 0;
-	this->expNext =
-		(50 / 3) * (pow(level, 3) -
-			6 * pow(level, 3) +
-			(17 * level) - 11);
+	this->expNext = 
+		static_cast<int>((50 / 3)*((pow(level, 3)
+			- 6 * pow(level, 2))
+			+ 17 * level - 12)) + 100;
 
 	this->statPoints = 0;
 	this->skillPoints = 0;
@@ -96,10 +96,9 @@ void Character::levelUp()
 		this->exp = this->expNext;
 		this->level++;
 
-		this->expNext = 
-			(50 / 3) * (pow(level, 3) -
-				6 * pow(level, 3) +
-				(17 * level) - 11);
+		this->expNext = static_cast<int>((50 / 3)*((pow(level, 3)
+			- 6 * pow(level, 2))
+			+ 17 * level - 12)) + 100;
 
 		this->statPoints++;
 		this->skillPoints++;

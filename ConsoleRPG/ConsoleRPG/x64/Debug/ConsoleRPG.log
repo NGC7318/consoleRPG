@@ -1,2 +1,8 @@
-﻿  Game.cpp
+﻿  Character.cpp
+  Game.cpp
+  Inventory.cpp
+  Item.cpp
+  main.cpp
+c:\users\joshs\source\repos\consolerpg\consolerpg\main.cpp(5): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
   ConsoleRPG.vcxproj -> C:\Users\joshs\source\repos\ConsoleRPG\x64\Debug\ConsoleRPG.exe
